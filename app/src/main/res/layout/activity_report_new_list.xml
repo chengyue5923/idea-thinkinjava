@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.fhzc.app.android.android.ui.view.widget.CommonToolBar
+        android:id="@+id/reportnewListToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mToolBar_rightImage="@drawable/title_message"
+        app:mToolBar_showRight="true"
+        app:mToolBar_title="投研世界" />
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/swipe_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<com.fhzc.app.android.android.ui.view.widget.ScrollViewExtend-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:id="@+id/mScrollView"-->
+            <!--android:scrollbars="none"-->
+            <!--android:layout_height="match_parent">-->
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <com.fhzc.app.android.android.ui.view.widget.ImagePagerViewPointRight
+                   android:id="@+id/ImagePagerView"
+                   android:layout_width="match_parent"
+                   android:layout_height="180dp"
+                   android:background="@null" />
+               <TextView
+                   android:layout_alignBottom="@id/ImagePagerView"
+                   android:background="#7f000000"
+                   android:text="新闻新视点新闻新视点"
+                   android:textColor="@color/white"
+                   android:layout_width="match_parent"
+                   android:gravity="center_vertical"
+                   android:paddingLeft="12dp"
+                   android:id="@+id/textViewtitle"
+                   android:layout_height="30dp" />
+           </RelativeLayout>
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+                   <android.support.design.widget.TabLayout
+                       android:layout_width="match_parent"
+                       android:id="@+id/reportTabLayout"
+                       android:layout_height="45dp"
+                       app:tabTextColor="@color/selected_deputy_text"
+                       app:tabIndicatorColor="@color/white"
+                       app:tabIndicatorHeight="0dp"
+                       android:background="@color/white"
+                       app:tabSelectedTextColor="@color/appColorBlue"/>
+                   <View
+                       android:layout_width="match_parent"
+                       android:background="@color/linecolor"
+                       android:layout_height="@dimen/line_size"/>
+
+                   <android.support.v4.view.ViewPager
+                       android:id="@+id/reportpager"
+                       android:background="@color/white"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       />
+
+               </LinearLayout>
+           </LinearLayout>
+        <!--</com.fhzc.app.android.android.ui.view.widget.ScrollViewExtend>-->
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+</LinearLayout>

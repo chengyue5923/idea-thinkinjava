@@ -1,0 +1,52 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.3'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+ext {
+    //SDK相关参数
+    compileSdkVersion = 23
+    buildToolsVersion = "23.0.1"
+    minSdkVersion = 14
+    targetSdkVersion = 22
+    //APP版本相关参数
+    versionCode = 175
+    versionName = "0.1.75"
+
+//    //签名相关参数
+//    storePassword = "foriseassets2016"
+//    keyAlias = "fuhuasihang"
+//    keyPassword = "foriseassets2016"
+    //签名相关参数
+    gradleFilePath = "hasoffer_android_key.jks"
+    storePassword = "hasoffer"
+    keyAlias = "hasoffer"
+    keyPassword = "hasoffer"
+
+
+    //app相关
+    ONLINE_APP_URL = '"http://120.24.49.204:8080/"'
+    ONLINE_PIC_URL = '"http://120.24.49.204:8080"'
+    //debug相关
+    DEBUG_APP_URL = '"http://dev-apptest.foriseassets.com:8080/"'
+    DEBUG_PIC_URL = '"http://dev-apptest.foriseassets.com:8080"'
+//    DEBUG_APP_URL = '"http://120.24.49.204:8080/"'
+//    DEBUG_PIC_URL = '"http://120.24.49.204:8080"'
+
+}
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+//task clean(type: Delete) {
+//    delete rootProject.buildDir
+//}
