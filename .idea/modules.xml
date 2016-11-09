@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/thinkinjava.iml" filepath="$PROJECT_DIR$/thinkinjava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FuHuaNew.iml" filepath="$PROJECT_DIR$/FuHuaNew.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baseframwork/baseframwork.iml" filepath="$PROJECT_DIR$/baseframwork/baseframwork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baseplatform/baseplatform.iml" filepath="$PROJECT_DIR$/baseplatform/baseplatform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baseview/baseview.iml" filepath="$PROJECT_DIR$/baseview/baseview.iml" />
     </modules>
   </component>
 </project>
